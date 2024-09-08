@@ -34,9 +34,20 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover::before {
+    content: "🔥";
+    font-size: 20px; /* размер огонька */
+    margin-left: 5px; /* отступ между текстом и огоньком */
+    transition: opacity 0.3s ease; /* плавное появление */
+    opacity: 1;
 }
+
+nav ul li a::before {
+    content: "";
+    opacity: 0; /* начальное состояние - невидимый */
+    transition: opacity 0.3s ease;
+}
+
 
 section {
     padding: 20px;
