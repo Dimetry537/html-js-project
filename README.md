@@ -1,1 +1,1 @@
-https://dimetry537.github.io/html-js-project.github.io/
+https://dimetry537.github.io/html-js-project/
